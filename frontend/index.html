@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-clifford: #da373d;
+        --color-bgColor:#CED1DE;
+        --color-boxColor:#7C859A;
+      }
+    </style>
+  </head>
+  <body class="bg-bgColor">
+    <h1 class="text-xl text-center font-bold mt-[60px] text-clifford">Todo List Application</h1>
+    <section class="p-4">
+        <div class="rounded shadow p-4 bg-boxColor">
+            <form action="mx-auto ">
+                <input class="bg-bgColor p-2 rounded" type="text">
+                <button>Add</button>
+            </form>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
