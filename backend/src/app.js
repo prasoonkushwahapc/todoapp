@@ -6,6 +6,7 @@ const app = express()
 app.use(express.json())
 
 // ROUTERS(APIs)
+app.use("/api/todo", require("./routes/todo.routes"))
 
 // SERVER HEALTH CHECK
 app.get("/", async (req, res)=>{
