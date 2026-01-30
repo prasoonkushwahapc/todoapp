@@ -3,26 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Todo App</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style type="text/tailwindcss">
-      @theme {
-        --color-clifford: #da373d;
-        --color-bgColor:#CED1DE;
-        --color-boxColor:#7C859A;
-      }
-    </style>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Todo app</title>
   </head>
-  <body class="bg-bgColor">
-    <h1 class="text-xl text-center font-bold mt-[60px] text-clifford">Todo List Application</h1>
-    <section class="p-4">
-        <div class="rounded shadow p-4 bg-boxColor">
-            <form action="mx-auto ">
-                <input class="bg-bgColor p-2 rounded" type="text">
-                <button>Add</button>
-            </form>
+  <body class="body">
+    <div class="container">
+      <div id="todo" class="todo-app">
+        <h3>Todo List</h3>
+        <div class="input">
+          <input id="input_box" type="text" placeholder="Add a new task" />
+          <button onclick="getTodo()">+Add</button>
         </div>
-    </section>
+        <ul id="list_container">
+          <!-- <li>Task 1</li>
+          <li>Task 1</li>
+          <li>Task 1</li> -->
+        </ul>
+      </div>
+    </div>
+
     <script src="./script.js"></script>
   </body>
 </html>
