@@ -9,7 +9,8 @@ function addTask(){
 }
 
 async function getTodo() {
-    const res = await fetch(`${LOCAL_URL}/api/todo`)
+    console.log("button clicked")
+    const res = await fetch(`${BASE_URL}/api/todo`)
     const todos = await res.json()
     console.log(todos)
 }
